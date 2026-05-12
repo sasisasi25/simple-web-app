@@ -3,21 +3,15 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/sasisasi25/simple-web-app.git'
-            }
-        }
-
         stage('Build') {
             steps {
-                bat 'echo Build Number: %BUILD_NUMBER%'
+                bat 'echo Building Application...'
             }
         }
 
         stage('Test') {
             steps {
-                bat 'echo Testing Application...'
+                bat 'echo Running Tests...'
             }
         }
 
