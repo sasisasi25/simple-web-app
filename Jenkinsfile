@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'echo Building Application...'
+                bat 'echo Build Number: %BUILD_NUMBER%'
             }
         }
 
