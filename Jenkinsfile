@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/USERNAME/simple-web-app.git'
+                git 'https://github.com/sasisasi25/simple-web-app.git'
             }
         }
 
